@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #746565;
+}
+
+.main {
+    margin-top: 30px;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.side_section {
+    height: 100%;
+    width: 25%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.container {
+    height: 100%;
+    width: 75%;
+    display: grid; /* Added display grid */
+    gap: 20px;
+    border-radius: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a b"
+        "c d b"
+        "e f f";
+}
+
+
+.cards {
+    width: 100%; /* Adjusted to fit within the grid */
+    height: 100%; /* Adjusted to fit within the grid */
+    display: flex;
+    
+    color: white; 
+    font-size: 1.5rem;
+    
+    
+    border-radius: 15px;
+}
+
+.cards:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: all .5s;
+}
+
+.card-1 {
+    background-color: hsla(12, 39%, 58%, 0.635);
+    color: black;
+    display: flex;
+    flex-flow: column;
+    
+    
+}
+
+.card-1_text{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 25px;
+   padding-top: 50px;
+   padding-left: 20px;
+
+   text-align: left;
+}
+
+.card-1_pic{
+    width: 50%;
+    align-self: start;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    
+    
+}
+
+.card-1_pic img{
+    margin-top: 50px;
+}
+
+
+.quicker{
+    color: rgb(18, 18, 144);
+}
+
+
+.card-2 {
+    grid-area: a;
+    background: linear-gradient(to right, #afbbd1, #49498d), 
+    linear-gradient(to bottom, #171710, #3f7c3f);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #171710;
+}
+
+.two_text_box h1{
+    font-size: 2.5em;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+}
+
+.two_img img{
+    width: 100%;
+    margin-top: 0;
+    padding: 0 200px;
+}
+
+.card-2 p{
+    margin-top: 0;
+    text-align: center;
+    font-size: 18px;
+}
+.x10 {
+    color: rgb(198, 157, 81);
+    text-shadow: 2px 3px 5px #4e3f3f
+}
+
+.card-3 {
+    grid-area: b;
+    background-color: hsl(256, 67%, 59%);
+    display: flex;
+    color: black;
+    flex-direction: column;
+    
+}
+
+.card-3 img{
+    width: 80%;
+    height: 50%;
+    margin-left: 70px;
+}
+
+.card-3 h1{
+    margin-top: 70px;
+    margin-left: 70px;
+    padding-right: 10px;
+}
+.card-3 p{
+    font-size: 20px;
+    margin-left: 70px;
+    padding-right: 60px;
+}
+
+.card-4 {
+    background-color: hsl(39, 100%, 71%);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-4_img img{
+    width: 100%;
+    padding: 20px;
+}
+
+.card-4_text{
+    color: black;
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.card-5 {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    color: #171710;
+    padding: 20px;
+    background-color: rgb(211, 187, 170);
+
+}
+
+.card-5 img{
+    width: 100%;
+   padding: 10px;
+}
+
+.card-5 h1{
+    padding: 30px;
+    font-size: 30px;
+}
+
+.card-6 {
+    grid-area: d;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-6 img{
+    width: 80%;
+}
+
+.card-7 {
+    grid-area: e;
+    background-color: yellow;
+}
+
+.card-8 {
+    grid-area: f;
+    background-color: rgb(112, 30, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.card-8 img{
+   margin-left: 30px;
+    width: 70%;
+    height: 70%;
+}
+.card-8 h1{
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.card-1 img{
+    width: 100%;
+}

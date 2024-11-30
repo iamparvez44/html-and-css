@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #270082;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   box-shadow: 3px 3px 8px black;
+   scroll-behavior: smooth;
+
+}
+
+.container{
+    max-width: 1200px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    scroll-behavior: smooth;
+  
+}
+
+.logo{
+    font-size: 2.3em;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container ul li{
+    list-style: none;
+    font-size: 1.1em;
+    border-bottom: 2px solid rgba(255, 166, 0, 0);
+    font-weight: 400;
+   
+}
+
+.container ul{
+    display: flex;
+    gap: 1.2em;
+   
+}
+
+.container ul li:hover{
+    
+    border-bottom: 2px solid rgb(201, 137, 18);
+    transition: .2s ease-in-out;
+    color:rgb(201, 137, 18);
+}
+
+.hero{
+    background-image: url(images/hero_image.png);
+    background-position: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    
+}
+
+.hero_text{
+    max-width: 1200px;
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 2em;
+}
+
+.main_text{
+    font-size: 7em;
+}
+
+.hero_text h2{
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 2.2em;
+}
+.hero_text p{
+    font-size: 1.1em;
+    
+}
+
+.music{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #281154;
+    scroll-behavior: smooth;
+    
+}
+
+.music_text{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 2em;
+    color: white;
+    
+    
+    
+}
+
+.music_text h3{
+    font-size: 2em;
+}
+
+.music_para_one{
+    font-weight: 700;
+}
+
+.music_btn{
+    display: inline-block;
+    width: 15%;
+    margin: 0 auto;
+    padding: 15px 8px ;
+    background-color: #dc0000;
+    color: white;
+    border: none;
+    
+}
+
+.ipad_iphone{
+    margin-top: -400px;
+  position: relative;
+  top: 400px;
+  scroll-behavior: smooth;
+}
+
+.abt_music{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 500px;
+    scroll-behavior: smooth;
+}
+
+.abt_music p{
+    font-weight: 500;
+}
+
+.btn_abt_music button{
+    background-color: #270082;
+    color: white;
+    font-size: medium;
+    padding: 10px 20px;
+}
+
+.video{
+    background-image: url(images/video.png);
+    max-height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    scroll-behavior: smooth;
+}
+
+.video_text{
+    max-width: 1200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+    gap: 30px;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.card_section{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px auto;
+    gap: 60px;
+}
+
+.card_text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn_giftCard button{
+    background-color: #270082;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+footer{
+    background-color: #270082;
+    scroll-behavior: smooth;
+}
+
+.footer_sec{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: white;
+    padding: 30px 0px;
+    scroll-behavior: smooth;
+   
+}
+
+.box p{
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.box ul{
+    list-style: none;
+    line-height: 18px;
+}
+.box ul li{
+    line-height: 18px;
+}
+
+

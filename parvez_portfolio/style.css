@@ -1,0 +1,159 @@
+:root{
+    --liteGreen: #47663B;
+    --darkGreen: #1F4529;
+    --ltePink: #EED3B1;
+}
+
+html,
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(74, 70, 70);
+    
+}
+
+.navbar{
+    max-width: 1024px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 1.6em;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li{
+    border-bottom: 2px solid #eed3b100 ;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.menu ul li:hover{
+    color: var(--ltePink);
+    border-bottom: 2px solid #eed3b1 ;
+    transform: scale(1.07) ;
+    transition: .5s ease-in-out;
+}
+
+.hero{
+    background-color: #352c1f;
+}
+
+.hero_sec{
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 2em;
+    gap: 6em;
+}
+
+.profilePic{
+    height: 100%;
+    width: 100%;
+    border-radius: 40%;
+    box-shadow: 5px 5px 10px black; 
+}
+
+.hero_img{
+    max-width: 300px;
+    max-height: 600px;
+    
+}
+
+.hero_text{
+    color: white;
+    display: grid;
+    align-self: center;
+    margin: 0 auto;
+   
+}
+
+.hero_text h1{
+    font-size: 3.5rem;
+    padding: 2rem;
+}
+
+.hi{
+    color: rgb(234, 150, 164);
+}
+.iam{
+    font-size: 35px;
+}
+.full{
+    font-size: 35px;
+}
+.dev{
+    color:rgb(234, 150, 164) ;
+    font-size: 35px;
+}
+
+.hero_text h2{
+    overflow: hidden;
+    border-radius: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.container{
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.project_contrainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+
+
+
+@media screen and (width < 750px){
+
+    .hero_sec{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+
+    .hero_text{
+        margin-left: 0;
+       
+    }
+
+}

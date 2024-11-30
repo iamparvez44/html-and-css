@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 100vw;
+    position: relative;
+    
+    /* background-color: #8f7a76; */
+  
+}
+
+.navigation{
+    max-width: 80vw;
+    margin: 20px auto;
+    
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 3px rgb(86, 63, 63);
+    background-color: white;
+
+
+   
+    
+}
+
+@media(max-width: 976px){
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+.navigation ul li{
+    float: left;
+    list-style: none;
+    text-decoration: none;
+   
+
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    margin: 0 1.02em;
+    font-weight: 800;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+
+.hero{
+    max-width: 80vw;
+    margin: 0 auto;
+    margin-top: 1.2em;
+    display: flex;
+    align-items: center;
+    column-gap: 90px;
+}
+
+.discount{
+    font-size: 2em;
+    background-color: rgb(73, 202, 73);
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgb(78, 68, 68);
+}
+
+.discount:hover{
+    
+    background-color: rgb(5, 112, 5);
+    transition: all 1s;
+    color: white;
+}
+
+.hero_text{
+    line-height: 1.3;
+    
+}
+.hero_subText{
+    font-size: 20px;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: rgb(202, 151, 56);
+    display: inline-block;
+    margin-top: 1.2em;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background-color: orange;
+    transition: all 0.8s;
+    cursor: pointer;
+
+}
+
+.hero_text h1{
+    font-size: 5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+@media(max-width: 976px){
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .discount{
+        font-size: 1em;
+       
+        
+    }
+
+    .hero_subText{
+        font-size: 15px;
+    }
+
+    .hero_text h1{
+        font-size: 2em;
+    }
+
+    .hero_text{
+        line-height: 1.2;
+    }
+
+    
+}
+
+
+.cards{
+    max-width: 80vw;
+    display: flex;
+    margin: 60px auto;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding-bottom: 40px;
+    
+}
+
+.card_box{
+    display: flex;
+    padding: 5px 15px;
+}
+
+.card_text{
+    padding: 0 20px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.3;
+}
+
+@media(max-width: 976px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+
+.menu_sec{
+
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+#menu{
+    display: inline-block;
+    background-color:rgb(73, 202, 73);
+    font-size: 1.3em;
+    font-weight: 400;
+    color: white;
+    padding: 10px 30px;
+}
+
+#exp_menu{
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu_grid{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+
+    
+}
+
+.grid_pic1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.grid_pic2{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.grid_pic3{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.grid_pic4{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.grid_pic5{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.grid_pic6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.grid_pic7{
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+.grid_pics{
+    border-radius: 20px;
+}
+
+.grid_pics:hover{
+    transform: scale(1.1);
+    transition: all .8s;
+}
+
+@media(max-width: 976px){
+    .menu_grid{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .grid_pics{
+        max-width: 200px;
+    }
+}
+
+footer{
+
+    margin-top: 40px;
+    max-width: 100vw;
+    background-color: rgb(227, 210, 210);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+footer ul{
+    list-style: none;
+    margin-left: -10px;
+    line-height: 2;
+    
+}
+
+footer h3{
+    font-size: 1.5em;
+    opacity: 0.5;
+}
+
+footer a{
+    font-weight: 300;
+    font-size: 1.3em;
+    color: rgb(29, 23, 23);
+}
+
+footer a:hover{
+    color: rgb(3, 122, 218);
+}
+
+@media(max-width: 976px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
